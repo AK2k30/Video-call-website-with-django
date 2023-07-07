@@ -1,0 +1,14 @@
+{
+    "builds":[
+        {
+            "src" : "videoconference_app/wsgi.py",
+            "use" : "@vercel/python"
+        }
+    ],
+    "routes":[
+        {
+            "src" : "/(.*)",
+            "dest" : "videoconference_app/wsgi.py"
+        }
+    ]
+}
