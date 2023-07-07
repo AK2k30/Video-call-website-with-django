@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-6fdgh7tki&^y_-cl4%tpyl-$kh9($vos&a5q&uq%!az2gs__bz
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["video-call-website-with-django.vercel.app"]
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -122,3 +122,8 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+import os
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
