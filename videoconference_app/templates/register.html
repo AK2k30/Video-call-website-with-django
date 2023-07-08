@@ -260,7 +260,7 @@
                       name="password1">
                     <input type="password" placeholder="Confirm your password"
                       name="password2">
-                    <input type="submit" class="button" value="Signup">
+                    <input type="submit" href="{% url 'dashboard' %}"class="button" value="Signup">
                     <center>
                       {% if error %}
                       <p style="color: red;">{{ error }}</p>

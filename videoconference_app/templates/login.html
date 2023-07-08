@@ -261,7 +261,7 @@
                       name="email">
                     <input type="password" placeholder="Enter your password"
                       name="password">
-                    <input type="submit" class="button" value="Login">
+                    <input type="submit" href="{% url 'dashboard' %}"class="button" value="Login">
                     <center>
                       {% if success %}
                       <p class="success"><b>{{ success }}</b></p>
