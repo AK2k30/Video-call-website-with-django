@@ -1,13 +1,1 @@
-{
-    "version" : 2,
-    "routes":[
-        {
-            "src" : "/static/(.*)",
-            "dest" : "/static/$1"
-        },
-        {
-            "src" : "/(.*)",
-            "dest" : "videoconference_app/wsgi.py"
-        }
-    ]
-}
+
